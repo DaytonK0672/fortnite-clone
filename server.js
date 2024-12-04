@@ -18,3 +18,15 @@ io.on('connection', (socket) => {
 server.listen(3000, () => {
     console.log('Server is running on http://localhost:3000');
 });
+
+// Server-side (server.js)
+const socket = io();
+
+socket.on('playerMove', (data) => {
+    // Update player position
+});
+
+socket.on('bulletShoot', (data) => {
+    // Handle bullet shooting
+});
+
